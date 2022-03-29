@@ -1,0 +1,13 @@
+{
+	"name": "Youtube Short Redirect",
+	"description": "Chrome script that redirect Youtube videos to the original page.",
+	"version": "1.0",
+	"manifest_version": 2,
+	"permissions": ["scripting"],
+	"content_scripts": [
+        {
+			"matches": ["*://*.youtube.com/shorts*"],
+        	"js": ["background.js"]
+        }
+      ]
+}
